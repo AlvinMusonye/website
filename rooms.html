@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar styles */
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #f5a623;
+            color: #333;
+        }
+
+        /* Main content styles */
+        main {
+            text-align: center;
+            padding: 40px 10px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Room images and Book buttons container */
+        .room-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .room {
+            position: relative;
+            width: 250px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .room img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .room:hover img {
+            transform: scale(1.1);
+        }
+
+        .book-button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f5a623;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .room:hover .book-button {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rooms.html">ROOMS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Designated Rooms</h3>
+
+        <div class="room-container">
+            
+            <div class="room">
+                <img src="2.jpg" alt="Room 1">
+                <button class="book-button">Book</button>
+            </div>
+        
+            <div class="room">
+                <img src="3.jpg" alt="Room 2">
+                <button class="book-button">Book</button>
+            </div>
+           
+            <div class="room">
+                <img src="4.jpg" alt="Room 3">
+                <button class="book-button">Book</button>
+            </div>
+            
+            <div class="room">
+                <img src="5.jpg" alt="Room 4">
+                <button class="book-button">Book</button>
+            </div>
+            <div class="room">
+                <img src="6.jpg" alt="Room 5">
+                <button class="book-button">Book</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+
+</html>
